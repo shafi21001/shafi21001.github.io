@@ -44,19 +44,27 @@
             text-decoration: underline;
         }
         section {
-            padding: 2rem;
+            padding: 5rem 0;
             margin: 2rem 0;
             background-color: #1e1e1e;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            text-align: center; /* Center-align text */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+            min-height: 300px; /* Minimum block height */
         }
         h1, h2 {
             color: #4CAF50;
-            text-align: center;
         }
         ul {
-            list-style-type: square;
-            margin-left: 20px;
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+        }
+        ul li {
+            margin: 0.5rem 0;
         }
         footer {
             text-align: center;
@@ -85,6 +93,7 @@
 
 <nav>
     <a href="#about">About</a>
+    <a href="#education">Education</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#achievements">Achievements</a>
@@ -95,6 +104,16 @@
     <section>
         <h2>About Me</h2>
         <p>Enthusiastic ICT student with a strong foundation in competitive programming and software development. Skilled in C++, Java, and web technologies, with experience in Android app development. Aiming to apply problem-solving expertise and technical skills to impactful software engineering roles in top-tier tech companies.</p>
+    </section>
+</div>
+
+<div id="education" class="block">
+    <section>
+        <h2>Education</h2>
+        <p><strong>Bachelor of Science (Engineering) in Information and Communication Technology</strong></p>
+        <p>Mawlana Bhashani Science and Technology University, Tangail</p>
+        <p><strong>CGPA:</strong> 3.80</p>
+        <p><strong>Current Status:</strong> 3rd Year, 2nd Semester</p>
     </section>
 </div>
 
