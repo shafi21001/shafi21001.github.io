@@ -6,60 +6,63 @@
     <title>Md. Shafi Mahmud - Portfolio</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif; /* Modern font */
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #121212, #1e1e1e); /* Gradient background */
+            background: linear-gradient(135deg, #1c1c1c, #2e2e2e);
             color: #ffffff;
             scroll-behavior: smooth;
         }
         header {
-            background: url('header-background.jpg') no-repeat center center/cover; /* Background image */
+            background: linear-gradient(135deg, #0f0f0f, #3a3a3a);
             color: #ffffff;
             text-align: center;
-            padding: 4rem 0;
+            padding: 3rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         header img {
             width: 150px;
             height: 150px;
-            border-radius: 50%; /* Circle profile picture */
+            border-radius: 50%;
             border: 4px solid #00FFFF;
             margin-bottom: 1rem;
-            transition: transform 0.3s; /* Subtle animation */
+            transition: transform 0.3s;
         }
         header img:hover {
-            transform: scale(1.1); /* Zoom effect on hover */
+            transform: scale(1.1);
         }
         nav {
             text-align: center;
             padding: 1rem 0;
-            background-color: #2d2d2d;
+            background-color: #292929;
             position: sticky;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         nav a {
             margin: 0 15px;
             text-decoration: none;
             color: #00FFFF;
             font-weight: bold;
-            transition: color 0.3s; /* Subtle color transition */
+            transition: color 0.3s;
         }
         nav a:hover {
             color: #ffffff;
             text-decoration: underline;
         }
         section {
-            padding: 2rem 5rem;
-            margin: 2rem 0;
-            background-color: #1e1e1e;
+            padding: 3rem 2rem;
+            margin: 2rem 1rem;
+            background: linear-gradient(135deg, #2c2c2c, #383838);
             border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             text-align: justify;
         }
         h1, h2 {
             color: #00FFFF;
             text-align: center;
+            text-transform: uppercase;
         }
         ul {
             list-style-type: none;
@@ -71,14 +74,15 @@
             align-items: center;
         }
         ul li i {
-            margin-right: 1rem; /* Space for icons */
+            margin-right: 1rem;
             color: #00FFFF;
         }
         footer {
             text-align: center;
             padding: 1rem 0;
-            background-color: #2d2d2d;
+            background-color: #292929;
             color: #ffffff;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
         }
         footer a {
             color: #00FFFF;
@@ -86,6 +90,20 @@
         }
         footer a:hover {
             text-decoration: underline;
+        }
+        .resume-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            border: 2px solid #00FFFF;
+            border-radius: 5px;
+            color: #00FFFF;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .resume-link:hover {
+            background-color: #00FFFF;
+            color: #292929;
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -98,7 +116,7 @@
     <p>Santosh, Tangail - 1902</p>
     <p>📞 01769175695 | 📧 <a href="mailto:shafi.msm1999@gmail.com" style="color:white;">shafi.msm1999@gmail.com</a></p>
     <p>🌐 <a href="https://www.linkedin.com/in/md-shafi-mahmud-abab31230" style="color:white;">LinkedIn</a></p>
-    <p>📄 <a href="https://shafi21001.github.io/Shafi_Resume.pdf" style="color:white;" target="_blank">View My Resume</a></p>
+    <a href="https://shafi21001.github.io/Shafi_Resume.pdf" class="resume-link" target="_blank">View My Resume</a>
 </header>
 
 <nav>
@@ -110,62 +128,50 @@
     <a href="#contact">Contact</a>
 </nav>
 
-<div id="about" class="block">
-    <section>
-        <h2>About Me</h2>
-        <p>Enthusiastic ICT student with a strong foundation in competitive programming and software development. Skilled in C++, Java, and web technologies, with experience in Android app development. Aiming to apply problem-solving expertise and technical skills to impactful software engineering roles in top-tier tech companies.</p>
-    </section>
-</div>
+<section id="about">
+    <h2>About Me</h2>
+    <p>Enthusiastic ICT student with a strong foundation in competitive programming and software development. Skilled in C++, Java, and web technologies, with experience in Android app development. Aiming to apply problem-solving expertise and technical skills to impactful software engineering roles in top-tier tech companies.</p>
+</section>
 
-<div id="education" class="block">
-    <section>
-        <h2>Education</h2>
-        <p><strong>Bachelor of Science (Engineering) in Information and Communication Technology</strong></p>
-        <p>Mawlana Bhashani Science and Technology University, Tangail</p>
-        <p><strong>CGPA:</strong> 3.80</p>
-        <p><strong>Current Status:</strong> 3rd Year, 2nd Semester</p>
-    </section>
-</div>
+<section id="education">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Science (Engineering) in Information and Communication Technology</strong></p>
+    <p>Mawlana Bhashani Science and Technology University, Tangail</p>
+    <p><strong>CGPA:</strong> 3.80</p>
+    <p><strong>Current Status:</strong> 3rd Year, 2nd Semester</p>
+</section>
 
-<div id="skills" class="block">
-    <section>
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><i class="fas fa-code"></i><strong> Programming Languages:</strong> C++, Java</li>
-            <li><i class="fas fa-tools"></i><strong> Development Tools:</strong> HTML, CSS, Android Studio</li>
-            <li><i class="fas fa-comments"></i><strong> Other Skills:</strong> Communication, public speaking, negotiation</li>
-        </ul>
-    </section>
-</div>
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+        <li><i class="fas fa-code"></i><strong> Programming Languages:</strong> C++, Java</li>
+        <li><i class="fas fa-tools"></i><strong> Development Tools:</strong> HTML, CSS, Android Studio</li>
+        <li><i class="fas fa-comments"></i><strong> Other Skills:</strong> Communication, public speaking, negotiation</li>
+    </ul>
+</section>
 
-<div id="projects" class="block">
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><i class="fas fa-newspaper"></i><strong> Online News Portal:</strong> Designed a visually appealing and user-friendly interface using HTML and CSS.</li>
-            <li><i class="fas fa-tasks"></i><strong> To-Do List App:</strong> Developed an Android application using Java and Firebase on Android Studio with task management features.</li>
-        </ul>
-    </section>
-</div>
+<section id="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li><i class="fas fa-newspaper"></i><strong> Online News Portal:</strong> Designed a visually appealing and user-friendly interface using HTML and CSS.</li>
+        <li><i class="fas fa-tasks"></i><strong> To-Do List App:</strong> Developed an Android application using Java and Firebase on Android Studio with task management features.</li>
+    </ul>
+</section>
 
-<div id="achievements" class="block">
-    <section>
-        <h2>Achievements</h2>
-        <ul>
-            <li><i class="fas fa-trophy"></i><strong> Competitive Programming Ratings:</strong> Specialist on Codeforces (Max Rating: 1410), 3-Star on CodeChef (Max Rating: 1679)</li>
-            <li><i class="fas fa-medal"></i><strong> Participation:</strong> IDPC, NCPC, and ICPC</li>
-            <li><i class="fas fa-certificate"></i><strong> Certifications:</strong> Web Development Course by Mimo (April 2022)</li>
-            <li><i class="fas fa-award"></i><strong> Other Awards:</strong> Champion in English Listening Test (2022), Runners-Up in ICT Intra-Department Cricket Tournament (2024)</li>
-        </ul>
-    </section>
-</div>
+<section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+        <li><i class="fas fa-trophy"></i><strong> Competitive Programming Ratings:</strong> Specialist on Codeforces (Max Rating: 1410), 3-Star on CodeChef (Max Rating: 1679)</li>
+        <li><i class="fas fa-medal"></i><strong> Participation:</strong> IDPC, NCPC, and ICPC</li>
+        <li><i class="fas fa-certificate"></i><strong> Certifications:</strong> Web Development Course by Mimo (April 2022)</li>
+        <li><i class="fas fa-award"></i><strong> Other Awards:</strong> Champion in English Listening Test (2022), Runners-Up in ICT Intra-Department Cricket Tournament (2024)</li>
+    </ul>
+</section>
 
-<div id="contact" class="block">
-    <section>
-        <h2>Contact</h2>
-        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:shafi.msm1999@gmail.com">shafi.msm1999@gmail.com</a>.</p>
-    </section>
-</div>
+<section id="contact">
+    <h2>Contact</h2>
+    <p>If you'd like to get in touch, feel free to email me at <a href="mailto:shafi.msm1999@gmail.com">shafi.msm1999@gmail.com</a>.</p>
+</section>
 
 <footer>
     <p>&copy; 2024 Md. Shafi Mahmud. All rights reserved. | <a href="#about">Back to top</a></p>
