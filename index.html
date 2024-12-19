@@ -11,6 +11,7 @@
             padding: 0;
             background-color: #121212;
             color: #ffffff;
+            scroll-behavior: smooth; /* Smooth scrolling */
         }
         header {
             background-color: #1e1e1e;
@@ -27,7 +28,11 @@
         }
         nav {
             text-align: center;
-            margin: 1rem 0;
+            padding: 1rem 0;
+            background-color: #1e1e1e;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav a {
             margin: 0 15px;
@@ -38,20 +43,16 @@
         nav a:hover {
             text-decoration: underline;
         }
-        main {
-            width: 90%;
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background-color: #1e1e1e;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-            border-radius: 10px;
-        }
         section {
-            margin-bottom: 2rem;
+            padding: 2rem;
+            margin: 2rem 0;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
         }
         h1, h2 {
             color: #4CAF50;
+            text-align: center;
         }
         ul {
             list-style-type: square;
@@ -62,7 +63,6 @@
             padding: 1rem 0;
             background-color: #1e1e1e;
             color: #ffffff;
-            position: relative;
         }
         footer a {
             color: #4CAF50;
@@ -91,13 +91,15 @@
     <a href="#contact">Contact</a>
 </nav>
 
-<main>
-    <section id="about">
+<div id="about" class="block">
+    <section>
         <h2>About Me</h2>
         <p>Enthusiastic ICT student with a strong foundation in competitive programming and software development. Skilled in C++, Java, and web technologies, with experience in Android app development. Aiming to apply problem-solving expertise and technical skills to impactful software engineering roles in top-tier tech companies.</p>
     </section>
+</div>
 
-    <section id="skills">
+<div id="skills" class="block">
+    <section>
         <h2>Technical Skills</h2>
         <ul>
             <li><strong>Programming Languages:</strong> C++, Java</li>
@@ -105,16 +107,20 @@
             <li><strong>Other Skills:</strong> Communication, public speaking, negotiation</li>
         </ul>
     </section>
+</div>
 
-    <section id="projects">
+<div id="projects" class="block">
+    <section>
         <h2>Projects</h2>
         <ul>
             <li><strong>Online News Portal:</strong> Designed a visually appealing and user-friendly interface using HTML and CSS.</li>
             <li><strong>To-Do List App:</strong> Developed an Android application using Java and Firebase on Android Studio with task management features.</li>
         </ul>
     </section>
+</div>
 
-    <section id="achievements">
+<div id="achievements" class="block">
+    <section>
         <h2>Achievements</h2>
         <ul>
             <li><strong>Competitive Programming Ratings:</strong> Specialist on Codeforces (Max Rating: 1410), 3-Star on CodeChef (Max Rating: 1679)</li>
@@ -123,12 +129,14 @@
             <li><strong>Other Awards:</strong> Champion in English Listening Test (2022), Runners-Up in ICT Intra-Department Cricket Tournament (2024)</li>
         </ul>
     </section>
+</div>
 
-    <section id="contact">
+<div id="contact" class="block">
+    <section>
         <h2>Contact</h2>
         <p>If you'd like to get in touch, feel free to email me at <a href="mailto:shafi.msm1999@gmail.com">shafi.msm1999@gmail.com</a>.</p>
     </section>
-</main>
+</div>
 
 <footer>
     <p>&copy; 2024 Md. Shafi Mahmud. All rights reserved. | <a href="#about">Back to top</a></p>
