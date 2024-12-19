@@ -6,30 +6,34 @@
     <title>Md. Shafi Mahmud - Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif; /* Modern font */
             margin: 0;
             padding: 0;
-            background-color: #121212;
+            background: linear-gradient(135deg, #121212, #1e1e1e); /* Gradient background */
             color: #ffffff;
-            scroll-behavior: smooth; /* Smooth scrolling */
+            scroll-behavior: smooth;
         }
         header {
-            background-color: #1e1e1e;
+            background: url('header-background.jpg') no-repeat center center/cover; /* Background image */
             color: #ffffff;
             text-align: center;
-            padding: 2rem 0;
+            padding: 4rem 0;
         }
         header img {
-            width: 200px;
-            height: 200px;
-            border-radius: 10%; /* Square with rounded edges */
-            border: 4px solid #00FFFF; /* Cyan border */
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Circle profile picture */
+            border: 4px solid #00FFFF;
             margin-bottom: 1rem;
+            transition: transform 0.3s; /* Subtle animation */
+        }
+        header img:hover {
+            transform: scale(1.1); /* Zoom effect on hover */
         }
         nav {
             text-align: center;
             padding: 1rem 0;
-            background-color: #1e1e1e;
+            background-color: #2d2d2d;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -37,36 +41,43 @@
         nav a {
             margin: 0 15px;
             text-decoration: none;
-            color: #00FFFF; /* Cyan text color */
+            color: #00FFFF;
             font-weight: bold;
+            transition: color 0.3s; /* Subtle color transition */
         }
         nav a:hover {
+            color: #ffffff;
             text-decoration: underline;
         }
         section {
-            padding: 15rem 15rem; /* Wider padding for uniformity */
+            padding: 2rem 5rem;
             margin: 2rem 0;
             background-color: #1e1e1e;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-            text-align: justify; /* Justify alignment for text */
-            min-height: 300px; /* Minimum block height */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            text-align: justify;
         }
         h1, h2 {
-            color: #00FFFF; /* Cyan color for headlines */
+            color: #00FFFF;
             text-align: center;
         }
         ul {
-            list-style-type: none; /* Remove bullet points */
+            list-style-type: none;
             padding: 0;
         }
         ul li {
-            margin: 0.5rem 0;
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+        }
+        ul li i {
+            margin-right: 1rem; /* Space for icons */
+            color: #00FFFF;
         }
         footer {
             text-align: center;
             padding: 1rem 0;
-            background-color: #1e1e1e;
+            background-color: #2d2d2d;
             color: #ffffff;
         }
         footer a {
@@ -77,6 +88,7 @@
             text-decoration: underline;
         }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
@@ -118,9 +130,9 @@
     <section>
         <h2>Technical Skills</h2>
         <ul>
-            <li><strong>Programming Languages:</strong> C++, Java</li>
-            <li><strong>Development Tools:</strong> HTML, CSS, Android Studio</li>
-            <li><strong>Other Skills:</strong> Communication, public speaking, negotiation</li>
+            <li><i class="fas fa-code"></i><strong> Programming Languages:</strong> C++, Java</li>
+            <li><i class="fas fa-tools"></i><strong> Development Tools:</strong> HTML, CSS, Android Studio</li>
+            <li><i class="fas fa-comments"></i><strong> Other Skills:</strong> Communication, public speaking, negotiation</li>
         </ul>
     </section>
 </div>
@@ -129,8 +141,8 @@
     <section>
         <h2>Projects</h2>
         <ul>
-            <li><strong>Online News Portal:</strong> Designed a visually appealing and user-friendly interface using HTML and CSS.</li>
-            <li><strong>To-Do List App:</strong> Developed an Android application using Java and Firebase on Android Studio with task management features.</li>
+            <li><i class="fas fa-newspaper"></i><strong> Online News Portal:</strong> Designed a visually appealing and user-friendly interface using HTML and CSS.</li>
+            <li><i class="fas fa-tasks"></i><strong> To-Do List App:</strong> Developed an Android application using Java and Firebase on Android Studio with task management features.</li>
         </ul>
     </section>
 </div>
@@ -139,10 +151,10 @@
     <section>
         <h2>Achievements</h2>
         <ul>
-            <li><strong>Competitive Programming Ratings:</strong> Specialist on Codeforces (Max Rating: 1410), 3-Star on CodeChef (Max Rating: 1679)</li>
-            <li><strong>Participation:</strong> IDPC, NCPC, and ICPC</li>
-            <li><strong>Certifications:</strong> Web Development Course by Mimo (April 2022)</li>
-            <li><strong>Other Awards:</strong> Champion in English Listening Test (2022), Runners-Up in ICT Intra-Department Cricket Tournament (2024)</li>
+            <li><i class="fas fa-trophy"></i><strong> Competitive Programming Ratings:</strong> Specialist on Codeforces (Max Rating: 1410), 3-Star on CodeChef (Max Rating: 1679)</li>
+            <li><i class="fas fa-medal"></i><strong> Participation:</strong> IDPC, NCPC, and ICPC</li>
+            <li><i class="fas fa-certificate"></i><strong> Certifications:</strong> Web Development Course by Mimo (April 2022)</li>
+            <li><i class="fas fa-award"></i><strong> Other Awards:</strong> Champion in English Listening Test (2022), Runners-Up in ICT Intra-Department Cricket Tournament (2024)</li>
         </ul>
     </section>
 </div>
