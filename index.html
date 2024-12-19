@@ -9,14 +9,21 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            background-color: #121212;
+            color: #ffffff;
         }
         header {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #1e1e1e;
+            color: #ffffff;
             text-align: center;
-            padding: 1rem 0;
+            padding: 2rem 0;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #4CAF50;
+            margin-bottom: 1rem;
         }
         nav {
             text-align: center;
@@ -26,6 +33,7 @@
             margin: 0 15px;
             text-decoration: none;
             color: #4CAF50;
+            font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
@@ -35,8 +43,9 @@
             max-width: 800px;
             margin: 2rem auto;
             padding: 1rem;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #1e1e1e;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
         }
         section {
             margin-bottom: 2rem;
@@ -51,15 +60,23 @@
         footer {
             text-align: center;
             padding: 1rem 0;
-            background-color: #4CAF50;
-            color: white;
+            background-color: #1e1e1e;
+            color: #ffffff;
             position: relative;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
 <header>
+    <img src="profile.jpg" alt="Profile Picture">
     <h1>Md. Shafi Mahmud</h1>
     <p>Santosh, Tangail - 1902</p>
     <p>📞 01769175695 | 📧 <a href="mailto:shafi.msm1999@gmail.com" style="color:white;">shafi.msm1999@gmail.com</a></p>
@@ -114,7 +131,7 @@
 </main>
 
 <footer>
-    <p>&copy; 2024 Md. Shafi Mahmud. All rights reserved.</p>
+    <p>&copy; 2024 Md. Shafi Mahmud. All rights reserved. | <a href="#about">Back to top</a></p>
 </footer>
 
 </body>
