@@ -47,7 +47,7 @@
             font-weight: bold;
             transition: color 0.3s;
         }
-        nav a:hover {
+        nav a:hover, nav a.active {
             color: #ffffff;
             text-decoration: underline;
         }
@@ -104,6 +104,18 @@
         .resume-link:hover {
             background-color: #00FFFF;
             color: #292929;
+        }
+        @media (max-width: 768px) {
+            header, section, nav {
+                padding: 2rem 1rem;
+            }
+            header img {
+                width: 120px;
+                height: 120px;
+            }
+            h1, h2 {
+                font-size: 1.5rem;
+            }
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -162,20 +174,3 @@
     <h2>Achievements</h2>
     <ul>
         <li><i class="fas fa-trophy"></i><strong> Competitive Programming Ratings:</strong> Specialist on Codeforces (Max Rating: 1410), 3-Star on CodeChef (Max Rating: 1679)</li>
-        <li><i class="fas fa-medal"></i><strong> Participation:</strong> IDPC, NCPC, and ICPC</li>
-        <li><i class="fas fa-certificate"></i><strong> Certifications:</strong> Web Development Course by Mimo (April 2022)</li>
-        <li><i class="fas fa-award"></i><strong> Other Awards:</strong> Champion in English Listening Test (2022), Runners-Up in ICT Intra-Department Cricket Tournament (2024)</li>
-    </ul>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <p>If you'd like to get in touch, feel free to email me at <a href="mailto:shafi.msm1999@gmail.com">shafi.msm1999@gmail.com</a>.</p>
-</section>
-
-<footer>
-    <p>&copy; 2024 Md. Shafi Mahmud. All rights reserved. | <a href="#about">Back to top</a></p>
-</footer>
-
-</body>
-</html>
