@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Md. Shafi Mahmud - Software Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
         :root {
             --primary: #2d46b9;
@@ -285,23 +284,6 @@
             line-height: 1.8;
         }
         
-        .about-image {
-            flex: 2;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-        
-        .about-image img {
-            width: 100%;
-            height: auto;
-            transition: transform 0.5s ease;
-        }
-        
-        .about-image:hover img {
-            transform: scale(1.05);
-        }
-        
         /* Education section */
         .education-card {
             background: linear-gradient(145deg, #1a1a2e, #16213e);
@@ -406,30 +388,6 @@
         }
         
         /* Projects section */
-        .projects-filter {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-bottom: 3rem;
-        }
-        
-        .filter-btn {
-            background: transparent;
-            border: 1px solid var(--gray);
-            color: var(--gray);
-            padding: 0.5rem 1.5rem;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        
-        .filter-btn:hover, .filter-btn.active {
-            background: var(--secondary);
-            border-color: var(--secondary);
-            color: var(--dark);
-        }
-        
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -451,17 +409,15 @@
         .project-img {
             height: 200px;
             overflow: hidden;
+            background-color: #2a2a45;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
-        .project-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-        
-        .project-card:hover .project-img img {
-            transform: scale(1.1);
+        .project-img i {
+            font-size: 4rem;
+            color: var(--secondary);
         }
         
         .project-content {
@@ -716,13 +672,6 @@
                 flex-direction: column;
             }
             
-            .about-image {
-                margin-top: 2rem;
-                width: 80%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            
             .contact-container {
                 grid-template-columns: 1fr;
             }
@@ -809,7 +758,7 @@
     <!-- Header Section -->
     <header id="home">
         <div class="header-content">
-            <img src="/api/placeholder/400/400" alt="Md. Shafi Mahmud" class="profile-img">
+            <img src="profile.jpg" alt="Md. Shafi Mahmud" class="profile-img">
             <h1 class="header-title">Md. Shafi Mahmud</h1>
             <h2 class="header-subtitle">Software Engineer & Competitive Programmer</h2>
             <div class="header-contact">
@@ -823,7 +772,7 @@
                 <a href="https://www.codechef.com/users/shafi_2100" target="_blank"><i class="fas fa-laptop-code"></i></a>
             </div>
             <div>
-                <a href="https://shafi21001.github.io/Shafi_Resume.pdf" class="cta-btn" target="_blank">Download CV</a>
+                <a href="Shafi_Resume.pdf" class="cta-btn" target="_blank">Download CV</a>
                 <a href="#contact" class="cta-btn">Get In Touch</a>
             </div>
         </div>
@@ -839,9 +788,6 @@
                     <p>With expertise in C++, Java, and web technologies, I've developed a range of projects from web applications to Android apps. My experience in competitive programming has sharpened my problem-solving skills and algorithmic thinking.</p>
                     <p>I'm currently pursuing my Bachelor's degree in Information and Communication Technology at Mawlana Bhashani Science and Technology University, where I maintain a strong academic record with a CGPA of 3.80.</p>
                     <p>My goal is to apply my technical skills and problem-solving expertise to impactful software engineering roles in top-tier tech companies, where I can contribute to innovative projects and continue growing as a developer.</p>
-                </div>
-                <div class="about-image">
-                    <img src="/api/placeholder/600/400" alt="Md. Shafi Mahmud">
                 </div>
             </div>
         </div>
@@ -909,3 +855,85 @@
                         </div>
                     </div>
                     <div class="skill-item">
+                        <div class="skill-name">
+                            <span>CSS3</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Android Development</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-java"></i>
+                    <span>Java</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fab fa-android"></i>
+                    <span>Android</span>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <span>Firebase</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in" style="background-color: rgba(0,0,0,0.1);">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Online News Portal</h3>
+                        <p>A responsive news portal with category-based content organization, user authentication, and modern UI design.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>To-Do List App</h3>
+                        <p>An Android task management application with features like task categorization, reminders, and cloud synchronization using Firebase.</p>
+                        <div class="project-tech">
+                            <span>Java</span
