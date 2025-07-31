@@ -50,6 +50,3 @@ This is a modern, responsive, and feature-rich personal portfolio website for Md
 - **Styling:** To change the styling, edit the `style.css` file.
 - **Functionality:** To modify the functionality, edit the `script.js` file.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
