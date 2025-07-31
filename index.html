@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Shafi Mahmud - Competitive Programmer</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="particle-canvas"></canvas>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo"><img src="assets/favicon.png" alt="Logo"></a>
+            <button class="hamburger" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#achievements">Achievements</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="theme-switch-wrapper">
+                <button id="theme-toggle" class="theme-toggle-btn">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="home">
+        <div class="container">
+            <div class="header-content">
+                <img src="assets/profile.jpg" alt="Md. Shafi Mahmud" class="profile-img" loading="lazy">
+                <h1 class="header-title">Md. Shafi Mahmud</h1>
+                <h2 class="header-subtitle">Competitive Programmer & Software Engineering Aspirant</h2>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/md-shafi-mahmud-abab31230" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/shafi21001" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://codeforces.com/profile/shafi_m" target="_blank"><i class="fas fa-code"></i></a>
+                    <a href="https://www.codechef.com/users/shafi_m" target="_blank"><i
+                            class="fas fa-laptop-code"></i></a>
+                    <a href="https://leetcode.com/shaphil/" target="_blank"><i class="fas fa-keyboard"></i></a>
+                </div>
+                <div class="header-buttons">
+                    <a href="assets/Shafi_Resume.pdf" class="btn" target="_blank">Download CV</a>
+                    <a href="#contact" class="btn">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in-left">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="card">
+                <p class="about-intro">A passionate ICT student with a relentless drive for competitive programming and a deep-seated aspiration to engineer innovative software solutions.</p>
+                <div class="about-grid">
+                    <div class="about-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Problem-Solving Prowess</h3>
+                        <p>My journey in competitive programming has honed my algorithmic thinking and equipped me with the skills to tackle complex challenges with confidence and precision.</p>
+                    </div>
+                    <div class="about-item">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>Future Ambitions</h3>
+                        <p>I am on a mission to achieve the Expert rank on Codeforces, excel in ICPC and NCPC, and contribute to the ever-evolving field of AI research.</p>
+                    </div>
+                    <div class="about-item">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Career Aspirations</h3>
+                        <p>Eager to apply my technical expertise to a challenging software engineering role at a top-tier tech company, where I can contribute to groundbreaking projects and continue my growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="fade-in-right" style="background: rgba(15, 23, 42, 0.6);">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="card">
+                <a href="https://ict.mbstu.ac.bd/" target="_blank" style="float: right; margin-left: 1rem;">
+                    <img src="assets/MBSTU_Logo.png" alt="Mawlana Bhashani Science and Technology University Logo"
+                        style="width: 100px;" loading="lazy">
+                </a>
+                <h3 style="color: var(--secondary); margin-bottom: 1rem;">Bachelor of Science (Engineering) in
+                    Information and Communication Technology</h3>
+                <p><strong>Institution:</strong> Mawlana Bhashani Science and Technology University, Tangail</p>
+                <p><strong>CGPA:</strong> 3.85 (out of 4.00)</p>
+                <p><strong>Current Status:</strong> 4th Year, 1st Semester</p>
+                <p><strong>Key Courses:</strong> Data Structures & Algorithms, OOP, Database Management, Web Programming
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="zoom-in">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="card">
+                <div class="skills-container">
+                    <a href="mimo-certificates.pdf" target="_blank"><span class="skill-tag"
+                            data-skill="html">HTML</span></a>
+                    <a href="mimo-certificates.pdf" target="_blank"><span class="skill-tag"
+                            data-skill="css">CSS</span></a>
+                    <a href="mimo-certificates.pdf" target="_blank"><span class="skill-tag"
+                            data-skill="javascript">JavaScript</span></a>
+                    <a href="https://www.stopstalk.com/user/profile/shafi_m" target="_blank"><span class="skill-tag"
+                            data-skill="problem-solving">Problem Solving</span></a>
+                    <a href="https://app.smalltalk2.me/cert/11a54f03" target="_blank"><span class="skill-tag"
+                            data-skill="english-as-a-second-language">English as a second
+                            language</span></a>
+                    <span class="skill-tag" data-skill="c">C</span>
+                    <span class="skill-tag" data-skill="c++">C++</span>
+                    <span class="skill-tag" data-skill="java">Java</span>
+                    <span class="skill-tag" data-skill="oop">OOP</span>
+                    <span class="skill-tag" data-skill="api">API</span>
+                    <span class="skill-tag" data-skill="python">Python</span>
+                    <span class="skill-tag" data-skill="django">Django</span>
+                    <span class="skill-tag" data-skill="data-mining">DBMS</span>
+                    <span class="skill-tag" data-skill="linux-os">Linux OS</span>
+                    <span class="skill-tag" data-skill="ms-office">MS Office</span>
+                    <span class="skill-tag" data-skill="arduino">Robotics</span>
+                    <span class="skill-tag" data-skill="git">Git</span>
+                    <span class="skill-tag" data-skill="data-structures">Data Structures</span>
+                    <span class="skill-tag" data-skill="algorithms">Algorithms</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in-left" style="background: rgba(15, 23, 42, 0.6);">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <a href="https://github.com/shafi21001/Check-IT-android-app" target="_blank">
+                        <img src="assets/projects/task manager.png" alt="Screenshot of Task Manager Android App"
+                            style="width: 100%; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+                    </a>
+                    <h3 style="color: var(--secondary); margin-bottom: 1rem;">Task Manager App</h3>
+                    <p>An Android task management application using Java with task categorization, reminders, and cloud
+                        synchronization using Firebase.</p>
+                    <div style="margin-top: 1rem;">
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; margin-right: 0.5rem;">Java</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem;">Android</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem;">Firebase</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/shafi21001/Meal-Management-System" target="_blank">
+                        <img src="assets/projects/meal management.png"
+                            alt="Screenshot of Meal Management System Console App"
+                            style="width: 100%; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+                    </a>
+                    <h3 style="color: var(--secondary); margin-bottom: 1rem;">Meal Management System</h3>
+                    <p>It is a simple console-based app using C++ tracks meals and balances for shared meal,
+                        ensuring transparency in financial contributions and meal consumption.</p>
+                    <div style="margin-top: 1rem;">
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; margin-right: 0.5rem;">C++</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem;">Console
+                            App</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="https://github.com/shafi21001/Arduino-Programs/tree/82d7357ab828c7fc650c303d988aee29414c885f/Smart%20Blind%20Stick%20project"
+                        target="_blank">
+                        <img src="assets/projects/smart blind stick.jpg" alt="Image of Smart Blind Stick Project"
+                            style="width: 100%; border-radius: 10px; margin-bottom: 1rem;" loading="lazy">
+                    </a>
+                    <h3 style="color: var(--secondary); margin-bottom: 1rem;">Smart Blind Stick</h3>
+                    <p>An arduino based project to help visually impaired users detect obstacles using an ultrasonic
+                        sensor and alerts them through a buzzer for safer navigation.</p>
+                    <div style="margin-top: 1rem;">
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; margin-right: 0.5rem;">Arduino</span>
+                        <span
+                            style="background: rgba(255,255,255,0.1); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem;">IoT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="fade-in-right">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="grid grid-3">
+                <div class="card">
+                    <img src="assets/achievements/achievement 1_ champion.jpg"
+                        alt="Award for English Listening Test Champion" style="width: 100%; border-radius: 10px;"
+                        loading="lazy">
+                    <div style="padding: 1rem;">
+                        <h3 style="color: var(--secondary); margin-bottom: 0.5rem;">Champion</h3>
+                        <p>English Listening Test organized by English Language Society, MBSTU.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/achievements/achievent 3_ 1st position.jpg"
+                        alt="Award for Google Site Portfolio Showcase 1st Position"
+                        style="width: 100%; border-radius: 10px;" loading="lazy">
+                    <div style="padding: 1rem;">
+                        <h3 style="color: var(--secondary); margin-bottom: 0.5rem;">1st Position</h3>
+                        <p>Google site portfolio showcase.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/achievements/Achievement 2_ Runners up.jpg"
+                        alt="Award for Cricket Quiz Competition Runners-up" style="width: 100%; border-radius: 10px;"
+                        loading="lazy">
+                    <div style="padding: 1rem;">
+                        <h3 style="color: var(--secondary); margin-bottom: 0.5rem;">1st Runners Up</h3>
+                        <p>Cricket Quiz Competition organized by Fresh.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="zoom-in">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>shafi.msm1999@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>01769175695</p>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://maps.google.com/maps?q=6VPR%2B76%20Tangail&t=&z=17&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contact-form" action="mailto:shafi.msm1999@gmail.com" method="post" enctype="text/plain">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="input-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: var(--darker); text-align: center; padding: 2rem 0;">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/md-shafi-mahmud-abab31230" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/shafi21001" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://codeforces.com/profile/shafi_m" target="_blank"><i class="fas fa-code"></i></a>
+                <a href="https://www.codechef.com/users/shafi_m" target="_blank"><i class="fas fa-laptop-code"></i></a>
+                <a href="https://leetcode.com/u/shafi_m/" target="_blank"><i class="fas fa-keyboard"></i></a>
+            </div>
+            <p>&copy; <span id="copyright-year"></span> Md. Shafi Mahmud. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
