@@ -57,6 +57,36 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial check on load
     handleScroll();
 
+    // --- Typing Effect --- 
+    const typingEffectElement = document.getElementById('typing-effect');
+    const words = ["Competitive Programmer", "Software Engineering Aspirant"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+        const currentWord = words[wordIndex];
+        if (isDeleting) {
+            typingEffectElement.textContent = currentWord.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            typingEffectElement.textContent = currentWord.substring(0, charIndex + 1);
+            charIndex++;
+        }
+
+        if (!isDeleting && charIndex === currentWord.length) {
+            setTimeout(() => isDeleting = true, 2000);
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+        }
+
+        const typingSpeed = isDeleting ? 100 : 200;
+        setTimeout(type, typingSpeed);
+    }
+
+    type();
+
     // --- Contact Form Submission ---
     document.getElementById('contact-form').addEventListener('submit', function(e) {
         e.preventDefault();
