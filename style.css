@@ -42,6 +42,7 @@ body {
 /* Navigation */
 #navbar {
     background-color: rgba(13, 13, 13, 0.75);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     position: fixed;
     width: 100%;
@@ -101,36 +102,12 @@ body {
     overflow: hidden;
 }
 
-.header-content {
-    text-align: center;
-    padding: 2rem;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
+.header-content-new {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
     align-items: center;
-}
-
-.profile-img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 6px solid var(--primary);
-    box-shadow: 0 0 50px var(--primary), 0 0 25px var(--primary) inset;
-    margin-bottom: 2rem;
-    object-fit: cover;
-    animation: pulse 3s infinite;
-}
-
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 30px var(--primary), 0 0 18px var(--primary) inset;
-    }
-    70% {
-        box-shadow: 0 0 55px var(--primary), 0 0 28px var(--primary) inset;
-    }
-    100% {
-        box-shadow: 0 0 30px var(--primary), 0 0 18px var(--primary) inset;
-    }
+    text-align: center;
 }
 
 .header-title {
@@ -152,10 +129,7 @@ body {
 }
 
 .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin: 2rem 0;
+    margin-bottom: 2.5rem;
 }
 
 .social-icons a {
@@ -166,10 +140,11 @@ body {
     height: 48px;
     border-radius: 50%;
     background: rgba(255, 215, 0, 0.15);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     border: 1px solid var(--primary);
+    margin-right: 1rem;
 }
 
 .social-icons a:hover {
@@ -177,6 +152,42 @@ body {
     background: var(--primary);
     transform: translateY(-5px) scale(1.15);
     box-shadow: 0 0 25px var(--primary);
+    animation: jiggle 0.5s ease-in-out;
+}
+
+@keyframes jiggle {
+    0%, 100% { transform: rotate(0); }
+    25% { transform: rotate(-5deg); }
+    75% { transform: rotate(5deg); }
+}
+
+.header-photo {
+    width: 312px; /* Image size + padding */
+    height: 312px; /* Image size + padding */
+    border-radius: 50%;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    padding: 6px; /* This creates the border thickness */
+    margin: 0 auto; /* Center the photo container */
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.header-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 70px rgba(255, 215, 0, 0.8);
+}
+
+.profile-img-new {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+#typing-effect {
+    border-right: 2px solid var(--primary);
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .btn {
@@ -315,18 +326,51 @@ section:nth-child(odd) {
 }
 
 /* Education Section */
-.education-logo {
-    float: right;
-    margin-left: 1rem;
+.education-card-new {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: center;
+    background: var(--dark);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.education-logo img {
-    width: 100px;
+.education-card-new:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2), 0 0 20px var(--primary);
 }
 
-#education h3 {
-    color: var(--secondary);
+.education-logo-container {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s;
+}
+
+.education-logo-container:hover {
+    transform: scale(1.05);
+}
+
+.education-logo-new {
+    width: 150px;
     margin-bottom: 1rem;
+}
+
+.education-logo-container h3 {
+    color: var(--secondary);
+    font-size: 1.2rem;
+}
+
+.education-details h3 {
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.education-details p {
+    margin-bottom: 0.5rem;
 }
 
 /* Projects Section */
@@ -354,17 +398,41 @@ section:nth-child(odd) {
 }
 
 /* Achievements Section */
-.achievement-img {
+.achievement-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.achievement-card img {
     width: 100%;
-    border-radius: 10px;
+    display: block;
+    transition: transform 0.4s ease;
 }
 
-.achievement-content {
-    padding: 1rem;
+.achievement-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(13, 13, 13, 0.8);
+    color: white;
+    padding: 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
 }
 
-.achievement-title {
-    color: var(--secondary);
+.achievement-card:hover .achievement-overlay {
+    transform: translateY(0);
+}
+
+.achievement-card:hover img {
+    transform: scale(1.1);
+}
+
+.achievement-overlay h3 {
+    color: var(--primary);
     margin-bottom: 0.5rem;
 }
 
@@ -750,4 +818,93 @@ body.light-mode footer .social-icons a:hover {
 
 body.light-mode footer p {
     color: #888;
+}
+
+body.light-mode .section-title {
+    color: var(--secondary);
+    text-shadow: none;
+}
+
+body.light-mode .section-title:after {
+    background: linear-gradient(to right, var(--primary), #2c3e50);
+    box-shadow: none;
+}
+
+body.light-mode .about-intro {
+    color: var(--gray);
+}
+
+body.light-mode .about-item h3 {
+    color: var(--secondary);
+}
+
+body.light-mode .about-item p {
+    color: var(--gray);
+}
+
+body.light-mode #education h3 {
+    color: var(--primary);
+}
+
+body.light-mode .project-title {
+    color: var(--primary);
+}
+
+body.light-mode .tag {
+    background: rgba(0, 119, 204, 0.1);
+    color: var(--primary);
+}
+
+body.light-mode .achievement-card .achievement-overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--secondary);
+}
+
+body.light-mode .achievement-overlay h3 {
+    color: var(--primary);
+}
+
+body.light-mode .contact-info, body.light-mode .contact-form-container {
+    background: #ffffff;
+}
+
+body.light-mode .contact-item h3 {
+    color: var(--secondary);
+}
+
+body.light-mode .contact-item p {
+    color: var(--gray);
+}
+
+body.light-mode input, body.light-mode textarea {
+    background: #f0f4f8;
+    border: 1px solid #d6e4f0;
+    color: #333;
+}
+
+body.light-mode input:focus, body.light-mode textarea:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(0, 119, 204, 0.2);
+}
+
+body.light-mode .cursor-sparkle {
+    background-color: var(--primary);
+    box-shadow: 0 0 5px var(--primary), 0 0 10px var(--primary);
+}
+
+body.light-mode .nav-links a {
+    color: var(--gray);
+    text-shadow: none;
+}
+
+body.light-mode .nav-links a:hover, body.light-mode .nav-links a.active {
+    color: var(--primary);
+}
+
+body.light-mode .hamburger {
+    color: var(--secondary);
+}
+
+body.light-mode .logo img {
+    filter: none;
 }
