@@ -24,7 +24,7 @@ This is a modern, responsive, and feature-rich personal portfolio website for Md
 ## File Structure
 
 ```
-. geminiclitest/
+. shafi21001.github.io/
 |-- assets/
 |   |-- achievements/
 |   |   |-- ... (achievement images)
